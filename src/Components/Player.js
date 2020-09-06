@@ -1,9 +1,17 @@
 import React from "react";
-
+import Sidebar from "./Sidebar";
+import Body from "./Body";
+import Footer from "./Footer";
+import "./Player.css";
 function Player() {
   return (
-    <div>
-      <h1>I am the Player</h1>
+    <div className="player">
+      <div className="player__body">
+        <Sidebar />
+        <Body />
+      </div>
+
+      <Footer />
     </div>
   );
 }
