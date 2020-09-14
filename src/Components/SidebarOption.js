@@ -2,7 +2,7 @@ import React from "react";
 import { useDataLayerValue } from "../DataLayer";
 import "./SidebarOption.css";
 function SidebarOption({ title, Icon, id }) {
-  const [{ spotify }, dispatch] = useDataLayerValue();
+  const [{ spotify, discover_weekly }, dispatch] = useDataLayerValue();
   const handleClick = () => {
     if (id) {
       spotify.getPlaylist(id).then((response) => {
@@ -13,10 +13,18 @@ function SidebarOption({ title, Icon, id }) {
       });
     }
   };
+  const goHome = () => {
+    if (discover_weekly) {
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: false,
+      });
+    }
+  };
   return (
     <div className="sidebarOption" onClick={handleClick}>
       {Icon && <Icon className="sidebarOption__icon" />}
-      {Icon ? <h4>{title}</h4> : <p> {title}</p>}
+      {Icon ? <h4 onClick={goHome}>{title}</h4> : <p> {title}</p>}
     </div>
   );
 }
