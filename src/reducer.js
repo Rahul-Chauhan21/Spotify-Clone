@@ -2,18 +2,14 @@ export const intialState = {
   user: null,
   playlists: [],
   playing: false,
-  item: null,
   discover_weekly: null,
-  top_artists: null,
+  top_artists: [],
   token: null,
   item: null,
-  playlistId: null,
   spotify: null,
 };
 
 const reducer = (state, action) => {
-  console.log(action);
-
   // Action -> type, [payload]
 
   switch (action.type) {
@@ -57,11 +53,6 @@ const reducer = (state, action) => {
       return {
         ...state,
         top_artists: action.top_artists,
-      };
-    case "SET_PLAYLISTID":
-      return {
-        ...state,
-        playlistId: action.playlistId,
       };
     default:
       return state;
