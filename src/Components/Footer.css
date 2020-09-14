@@ -1,5 +1,5 @@
 .footer {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   bottom: 0;
@@ -7,6 +7,7 @@
   width: 98%;
   background-color: #282828;
   padding: 20px;
+  pointer-events: none;
 }
 .footer__right * .MuiSlider-root {
   color: #1ed15e;

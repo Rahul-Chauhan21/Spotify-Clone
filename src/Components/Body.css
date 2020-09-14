@@ -4,7 +4,8 @@
   height: 100vh;
   color: #fff;
   background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
-  overflow-y: overlay;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .body::-webkit-scrollbar {
