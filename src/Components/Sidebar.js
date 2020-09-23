@@ -29,7 +29,7 @@ function Sidebar() {
       <SidebarOption Icon={SearchIcon} title="Search" id={null} />
       <SidebarOption Icon={LibraryMusicIcon} title="Your Library" id={null} />
       <br />
-      <strong className="sidebar__title">PLAYLISTS</strong>
+      <p className="sidebar__title">PLAYLISTS</p>
       <hr />
       <div className="playlist">
         {playlists?.items?.map((playlist) => (

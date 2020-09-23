@@ -5,13 +5,15 @@
   width: 131px;
   padding-top: 24px;
   padding-left: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .sidebar__title {
   padding: 5px;
   font-size: 12px;
-  margin-left: 12px;
+  margin-left: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 .sidebar__logo:hover {
