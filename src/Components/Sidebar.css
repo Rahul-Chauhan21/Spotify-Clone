@@ -1,26 +1,19 @@
-.sidebar {
-  height: 100vh;
-  flex: 0.2;
-  color: #fff;
-  min-width: 230px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #040404;
-}
-
 .sidebar__logo {
   margin-right: auto;
   object-fit: contain;
   height: 40px;
-  padding: 10px;
+  width: 131px;
+  padding-top: 24px;
+  padding-left: 14px;
+  margin-bottom: 18px;
 }
 
 .sidebar__title {
-  margin-left: 10px;
   padding: 5px;
   font-size: 12px;
+  margin-left: 12px;
 }
 
-.sidebar > img:hover {
+.sidebar__logo:hover {
   cursor: pointer;
 }

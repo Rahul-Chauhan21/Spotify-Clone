@@ -67,7 +67,7 @@ function Footer({ spotify }) {
     });
   };
   return (
-    <div className="footer">
+    <>
       <div className="footer__left">
         <img
           className="footer__albumLogo"
@@ -118,7 +118,7 @@ function Footer({ spotify }) {
           </Grid>
         </Grid>
       </div>
-    </div>
+    </>
   );
 }
 

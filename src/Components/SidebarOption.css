@@ -5,6 +5,8 @@
   height: 40px;
   cursor: pointer;
   transition: 200ms color ease-in;
+  margin-left: 4px;
+  padding: auto;
 }
 
 .sidebar > hr {
@@ -25,4 +27,10 @@
 .sidebarOption__icon {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.playlist {
+  min-height: 100px;
+  height: 25%;
+  overflow-y: overlay;
 }

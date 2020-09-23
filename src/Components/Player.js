@@ -5,14 +5,19 @@ import Footer from "./Footer";
 import "./Player.css";
 function Player({ spotify }) {
   return (
-    <div className="player">
-      <div className="player__body">
-        <Sidebar />
-        <Body spotify={spotify} />
+    <>
+      <div className="player-container">
+        <div className="sidebar__body">
+          <Sidebar />
+        </div>
+        <div className="player__body">
+          <Body spotify={spotify} />
+        </div>
       </div>
-
-      <Footer spotify={spotify} />
-    </div>
+      <div className="footer__body">
+        <Footer spotify={spotify} />
+      </div>
+    </>
   );
 }
 
