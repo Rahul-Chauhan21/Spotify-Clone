@@ -4,7 +4,7 @@ import "./Body.css";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import { useDataLayerValue } from "../DataLayer";
+import { useDataLayerValue } from "../data/DataLayer";
 import SongRow from "./SongRow";
 import Artists from "./Artists";
 

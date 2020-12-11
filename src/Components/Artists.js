@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useDataLayerValue } from "../DataLayer";
+import { useDataLayerValue } from "../data/DataLayer";
 import "./Artists.css";
 function Artists() {
   const [{ spotify, top_artists }, dispatch] = useDataLayerValue();

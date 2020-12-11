@@ -1,5 +1,5 @@
 import React from "react";
-import { useDataLayerValue } from "../DataLayer";
+import { useDataLayerValue } from "../data/DataLayer";
 import "./SidebarOption.css";
 function SidebarOption({ title, Icon, id }) {
   const [{ spotify, discover_weekly }, dispatch] = useDataLayerValue();
